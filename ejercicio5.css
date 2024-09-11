@@ -1,0 +1,334 @@
+html, body {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    scroll-behavior: smooth;
+}
+header, section, footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 120px;
+    background-color: tomato;
+    position: sticky; 
+    top: 0; 
+    z-index: 100;
+}
+
+#botonera {
+    height: 30px;
+    float: left;
+}
+#botonera ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+} 
+
+#botonera ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#botonera ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: lightgrey;
+}
+
+#botonera ul li a:hover {
+    background-color: grey;
+} 
+
+#todos_los_datos {
+    display: flex; 
+}
+
+.acomodarFotos {
+    height: 500px;
+}
+
+#marca {
+    width: 90px;
+    height: 90px;
+    margin-left: 750px;
+    float: left;
+
+}
+
+#marca img {
+    width: 90px;
+}
+
+#datos_contacto {
+    width: 300px;
+    height: 90px;
+    float: left;
+    padding-left: 550px;
+    text-align: right;
+    text-size-adjust: cover;
+}
+
+#seccion1 {
+    height: 600px;
+    display: flex;
+}
+
+#perro1, #perro2 {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    float: left;
+    margin: 60px 65px;
+}
+
+#perro1 {
+    background-color: lightcoral;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+#perro2 {
+    background-color: rgb(104, 19, 104);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+#seccion2 {
+    background-color: lightcoral;
+
+}
+
+#seccion3 {
+    height: 700px;
+    background-color: tomato;
+}
+
+#pajaro {
+    width: 600px;
+    height: 700px;
+    background-color: lightcoral;
+    margin: auto;
+}
+
+#pajaro h3 {
+    margin: 0px;
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.6558998599439776) 0%, rgba(255,155,155,0.5) 13%, rgba(255,0,0,1) 74%);
+}
+#seccion4 {
+    height: 700px;
+    background-color: lightcoral;
+}
+#seccion4 #Noticia-1, #seccion4 #Noticia-2,#seccion4 #Noticia-3{
+    margin-top: 0px;
+
+}
+#seccion4 h1 {
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+ /*Seccion de bootstrap*/ 
+#seccion5 {
+    background-color: cornflowerblue
+   
+}
+
+#bootstrap-1{
+    height: 350px;
+    background-color: tomato
+
+}
+
+
+#bootstrap-2 {
+    background-color: tomato
+}
+
+#boot-caja-3 {
+    background-color: tomato;
+}
+#boot-caja-4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: cornsilk;
+}
+#boot-caja-5 {
+    background-color: tomato
+}
+
+#privacidad {
+    background-color: tomato;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#totalContenido {
+    background-image: url('./imagenes/fondoPagina.jpg');
+    background-repeat: round;
+}
+
+footer {
+    background-color: palevioletred;
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    header, section, footer {
+        width: 580px;
+    }
+    
+    header {
+        background-color: rgba(240, 128, 128, 0.5);
+    }
+
+    #marca {
+        margin-left: 0px;
+        margin-left: 250px;
+    }
+
+    #botonera {
+        width: 580px;
+    }
+
+    #seccion1 {
+        height: 600px;
+    }
+    
+    #perro1, #perro2 {
+        width: 240px;
+        margin: 50px 25px;
+    }
+    
+    #gato1, #gato2 {
+        width: 520px;
+    }
+
+    #seccion3 {
+        height: 700px;
+    }
+    
+    #pajaro {
+        width: 400px;
+    }
+
+    #pajaro h3 {
+        text-align: center;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,0.6558998599439776) 0%, rgba(255,155,155,0.5) 13%, rgba(255,0,0,1) 74%);
+    }
+       
+       
+    #privacidad {
+        width: 580px;
+    }
+} /*Fin media de 600*/
+
+@media all and (max-width: 599px) {
+
+    header, section, footer {
+        width: 100%;
+    }
+    
+    header {
+        height: auto;
+        position: relative; 
+    }
+    
+    #botonera {
+        width: 100%;
+        height: 30px;
+        float: none;
+    }
+   
+    #botonera ul {
+        display: block;
+    } 
+    
+    #marca {
+        margin-left: 0px;
+        width: 95%;
+        height: auto;
+        float: none;
+    
+    }
+    
+    #marca img {
+        width: 90px;
+    }
+
+    #seccion1 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #perro1, #perro2 {
+        margin: 50px 0px;
+        width: 90%;
+    }
+
+    #seccion2 {
+        background-color: orangered;
+    
+    }
+    
+    #gato1, #gato2 {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 25px 10px;
+    }
+    
+    #gato1 {
+        background-color: yellow;
+    }
+    
+    #gato2 {
+        background-color: yellowgreen;
+        clear: both;
+    }
+    
+    #seccion3 {
+        height: 700px;
+        background-color: coral;
+    }
+    
+    #pajaro {
+        width: auto;
+        height: 700px;
+        background-color: crimson;
+        margin: auto;
+    }
+
+    #pajaro h3 {
+        text-align: center;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,0.6558998599439776) 0%, rgba(255,155,155,0.5) 13%, rgba(255,0,0,1) 74%);
+    }
+       
+       
+    footer {
+        height: 110px;
+        background-color: palevioletred;
+    }
+    
+    #privacidad {
+        width: auto;
+        background-color: pink;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+} 
+    
